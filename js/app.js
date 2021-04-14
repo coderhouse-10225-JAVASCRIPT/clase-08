@@ -43,7 +43,34 @@ for (const elements of all_buttons) {
     console.log(elements);
 }
 
+// Creo elemento
+let myElementP = document.createElement("p");
 
+myElementP.innerHTML = "<h2> Hola Coderhouse </h2>";
+
+// se lo agrego al buttonlogin
+buttonLogin.appendChild(myElementP);
+
+// Conozco el parent de myElementP
+//buttonLogin.removeChild(myElementP);
+
+// Y si no se que se encuentra en buttoLogin?
+myElementP.parentNode.removeChild(myElementP);
+
+let myUserInput = document.getElementById("usuario");
+
+myUserInput.value= "HOMERO SIMPSONs"
+
+let myListPersonas = document.getElementById("personas");
+
+let personasList = ["HOMERO", "MARGE", "LISA", "BART"];
+
+// Agrego a UL la lista de personas en el array
+for (const persona of personasList) {
+    let myItemList = document.createElement("li");
+    myItemList.innerHTML = persona;
+    myListPersonas.appendChild(myItemList);
+}
 
 /*
 let myTempObj = {id: 0, marca:"CocaCola", precio:120, inflacion: 1000 } //tramedatos(URL); //
