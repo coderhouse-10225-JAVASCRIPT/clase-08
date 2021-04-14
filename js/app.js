@@ -72,7 +72,7 @@ for (const persona of personasList) {
     myListPersonas.appendChild(myItemList);
 }
 
-/*
+
 let myTempObj = {id: 0, marca:"CocaCola", precio:120, inflacion: 1000 } //tramedatos(URL); //
 
 let myProducto = new Producto( myTempObj.id, myTempObj.marca, myTempObj.precio );
@@ -101,8 +101,16 @@ if( storedCarrito != null){
     myCarrito.push(myProducto);
     myCarrito.push(myProducto2);
 }
-
-
-
 sessionStorage.setItem("carrito", JSON.stringify(myCarrito));
-*/
+
+
+// vamos a pintar un carrito
+let myHTMLCarrito = document.getElementById("myCarrito");
+
+for (const product of myCarrito) {
+    let myItem = document.createElement("li");
+
+    myItem.innerHTML = product.getHTML();
+
+    myHTMLCarrito.appendChild(myItem);
+}

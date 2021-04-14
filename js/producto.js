@@ -9,5 +9,9 @@ class Producto {
     valorMasIva() {
         return this.precio * 1.21;
     }
+
+    getHTML() {
+        return "<h1>" + this.marca + ": $" + this.precio +"</h1>" 
+    }
     
 }
