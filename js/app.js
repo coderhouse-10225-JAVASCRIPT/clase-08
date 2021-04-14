@@ -4,13 +4,26 @@ myUserProfile.load();
 
 console.log("Mi darkmode es: " + myUserProfile.darkmode);
 
-let myInput = prompt("Quiere pasar a darkmode? [S]i o [N]o");
+let myInput = 'n';//prompt("Quiere pasar a darkmode? [S]i o [N]o");
 
 if( myInput.toLowerCase() == "s"){
     myUserProfile.darkmode = true;
     myUserProfile.save();
 }
 
+// salida en modo objeto del DOM
+console.dir(document);
+
+// Salida en modo texto del html
+console.log(document);
+
+console.dir(document.body.children);
+
+for (const element of document.body.children) {
+    console.dir(element);
+}
+
+/*
 let myTempObj = {id: 0, marca:"CocaCola", precio:120, inflacion: 1000 } //tramedatos(URL); //
 
 let myProducto = new Producto( myTempObj.id, myTempObj.marca, myTempObj.precio );
@@ -43,3 +56,4 @@ if( storedCarrito != null){
 
 
 sessionStorage.setItem("carrito", JSON.stringify(myCarrito));
+*/
