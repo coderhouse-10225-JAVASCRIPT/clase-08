@@ -23,6 +23,12 @@ for (const element of document.body.children) {
     console.dir(element);
 }
 
+let signupButton = document.body.children[2]; // Es el tercer elemento dentro de body, osea indice 2 del array
+
+signupButton.innerHTML = "Registrar"
+
+console.dir(signupButton);
+
 /*
 let myTempObj = {id: 0, marca:"CocaCola", precio:120, inflacion: 1000 } //tramedatos(URL); //
 
