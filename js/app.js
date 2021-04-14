@@ -29,6 +29,22 @@ signupButton.innerHTML = "Registrar"
 
 console.dir(signupButton);
 
+let buttonLogin = document.getElementById("login");
+let buttons_css = document.getElementsByClassName("button");
+let all_buttons = document.getElementsByTagName("button");
+
+console.log(buttonLogin);
+
+for (const elements of buttons_css) {
+    console.log(elements);
+}
+
+for (const elements of all_buttons) {
+    console.log(elements);
+}
+
+
+
 /*
 let myTempObj = {id: 0, marca:"CocaCola", precio:120, inflacion: 1000 } //tramedatos(URL); //
 
